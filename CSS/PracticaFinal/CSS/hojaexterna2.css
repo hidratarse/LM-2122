@@ -1,0 +1,11 @@
+p{
+    text-decoration:underline;
+}
+p:first-letter{
+    color:green;
+    font-weight: bold;
+    font-size: 250%;
+}
+p:first-line{
+    color:blue;
+}
