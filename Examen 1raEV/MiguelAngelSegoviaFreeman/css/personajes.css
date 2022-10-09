@@ -1,0 +1,23 @@
+body{font-family: Comic Sans MS, cursive, sans-serif;}
+/*Caja que contiene los personajes*/
+
+h2{text-align: center;}
+
+.personaje {
+    width: 1150px;
+	border-style:solid;
+	border-color:gray;
+	border-width: 1;
+	border-radius:10px;
+}
+
+div{margin:auto;}
+
+img{
+	padding: 15px;;
+	float:left;
+}
+p{
+	text-align:justify;
+	margin: 15px;
+}

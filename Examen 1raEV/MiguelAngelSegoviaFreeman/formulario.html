@@ -1,0 +1,63 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+	<title>Formulario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/formulario.css" type="text/css" />
+</head>
+<body>
+<!--Encabezado-->
+<header>
+    <!--Menú de navegación-->
+    <nav>
+        <ul id="enlace_menu">
+            <li><a id="frases" href="Frases.html">Frases</a></li>
+            <li><a id="personajes" href="Personajes.html">Personajes</a></li>
+			<li class="suscribete"><a href="formulario.html">¡Suscríbete!</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <div id="sorteo">
+        <h1>¡Libros gratis durante 1 año!</h1>
+        <p>¿Te gustaría leer más pero no quieres gastarte el dinero?</p>
+        <p>¡Ya no tienes excusa! Gana un año de libros <b>GRATIS</b> participando en nuestro sorteo. 
+		No esperes más, solo tienes que suscribirte ;)</p>
+        <h2>¡Corre! Se acaba el tiempo...Tic... Tac...</h2>
+    </div>
+    <div id="contenedor-formulario">
+        <form action="#" method="post" target="_blank">
+            	<span class="titulo-formulario">
+                    Participa en el sorteo
+				</span>
+            <div class="entrada-datos">
+                <span class="etiqueta-formulario">Nombre:*</span>
+                <label>
+                    <input type="text" id="nombre" required placeholder="Introduce tu nombre" required="requerido" maxlength="20" >
+                </label>
+            </div>
+            <div class="entrada-datos">
+                <span class="etiqueta-formulario">Email:*</span>
+                <label>
+                    <input type="email" id="email" required placeholder="Introduce tu email" required="requerido" maxlength="20"> 
+                </label>
+
+               <div id="rgpd">
+                <input type="checkbox" id="gprd" value="" required="requerido" data-name="gprd">
+                <span>*He leído y acepto la política de privacidad</span>
+				</div>
+			</div>
+                <button class="boton"><span>Enviar</span></button>           
+        </form>
+    </div>
+</section>
+<footer>
+    <ul id=enlace_menu>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de cookies</a></li>
+    </ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CD SYSTEM "dtd.dtd">
+  <CD titulo="Stoney">
+  <fecha></fecha>
+    <songs>
+      <song length="6:20" anio="1978">
+        <title>Hot Cop</title>
+        <composers>
+          <composer>
+            <nombre>Henry</nombre>
+            <apellidos>Beolo</apellidos>
+          </composer>
+        </composers>
+        <producers>
+          <producer>
+            <nombre>Jacques</nombre>
+            <apellidos>Morali</apellidos>
+          </producer>
+        </producers>
+        <publisher>PolyGram</publisher>
+        <artists>
+          <artist>Village People</artist>
+        </artists>
+      </song>
+      </songs>
+    </CD>

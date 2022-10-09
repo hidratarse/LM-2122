@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<geografia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="geografia.xsd">
+  <continentes>
+    <continente nombre="Europa">
+      <pais nombre="Espanya">
+        <sistema>monarquia</sistema>
+        <superficie>504645</superficie>
+        <poblacion>47.35</poblacion>
+		    <idioma>espanyol</idioma>
+      </pais>
+      <pais nombre="Francia">
+        <sistema>republica</sistema>
+        <superficie>675417</superficie>
+        <poblacion>67.39</poblacion>
+        <idioma>frances</idioma>
+      </pais>
+      <pais nombre="Suiza">
+        <sistema>republica</sistema>
+        <superficie>41290</superficie>
+        <poblacion>8.64</poblacion>
+        <idioma>frances</idioma>
+      </pais>
+    </continente>
+    <continente nombre="America">
+      <pais nombre="Argentina">
+        <sistema>republica</sistema>
+        <superficie>2780400</superficie>
+        <poblacion>45.38</poblacion>
+        <idioma>espanyol</idioma>
+    </pais>
+      <pais nombre="Uruguay">
+        <sistema>republica</sistema>
+        <superficie>176215</superficie>
+        <poblacion>3.47</poblacion>
+        <idioma>espanyol</idioma>
+    </pais>
+    <pais nombre="Jamaica">
+      <sistema>monarquia</sistema>
+      <superficie>10991</superficie>
+      <poblacion>2.91</poblacion>
+      <idioma>ingles</idioma>
+    </pais>
+    </continente>
+  </continentes>
+</geografia>

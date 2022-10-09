@@ -1,0 +1,63 @@
+1-
+for $a in distinct-values(catalogo/cd/pais)
+let $ant := min(catalogo/cd[pais=$a]/anio)
+let $b := catalogo/cd[anio=$ant and pais=$a]/titulo
+return concat('Pais: ',$a,' Año: ',' disco más antiguo ',$ant,' Titulo: ',$b)
+
+2-
+for $a in catalogo/cd
+let $precio := $a/precio
+return if ($precio>10) then <caro>{$a/artista}{$a/titulo}</caro>
+else <barato>{$a/artista}{$a/titulo}</barato>
+
+3-
+for $a in distinct-values(catalogo/cd/empresa)
+let $count := count(catalogo/cd[$a=empresa])
+for $coste in avg(catalogo/cd[$a=empresa]/precio)
+return if ($count>1) then concat('Empresa: ',$a,' NºCD ',$count,' media de CD ',$coste)
+
+4-
+for $a in distinct-values(catalogo/cd/artista)
+return if(starts-with($a, 'B')) then $a
+
+5-
+for $a in distinct-values(catalogo/cd/anio)
+let $count := count(catalogo/cd[anio=$a])
+order by $a
+return concat($a,' NºCDs: ',$count)
+
+6-
+for $a in distinct-values(catalogo/cd/titulo)
+let $b := string-length($a)
+order by $b descending
+return <titulo>{$a}</titulo>
+
+7-
+for $a in catalogo/cd/artista
+let $b := artistas/entrada[artista=$a]/fecha_nac
+order by $b
+return concat($a,' - ',$b)
+
+8-
+<html>
+  <body>
+  <table border='1'>
+  <TH>TITULO</TH>
+  <TH>ARTISTA</TH>
+  <TH>PAIS</TH>
+  <TH>PRECIO</TH>
+  <TH>PRECIO</TH>
+  <TH>ANIO</TH>{
+    for $a in catalogo/cd
+    return
+    <tr>
+    <td>{data($a/titulo)}</td>
+    <td>{data($a/artista)}</td>
+    <td>{data($a/pais)}</td>
+    <td>{data($a/company)}</td>
+    <td>{data($a/precio)}</td>
+    <td>{data($a/anio)}</td>
+    </tr>
+  }</table>
+  </body>
+</html>

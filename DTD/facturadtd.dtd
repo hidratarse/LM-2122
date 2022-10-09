@@ -1,0 +1,34 @@
+<!ELEMENT factura (empresa, cliente, dfactura)>
+<!ATTLIST factura numfac ID #REQUIRED>
+
+<!ELEMENT empresa (nombre,dir,poblacion,provincia,cif,telefono?,fax?)>
+<!ELEMENT cliente (nombre, direnv, poblacion, provincia)>
+<!ATTLIST cliente numcli ID #REQUIRED>
+  
+<!ELEMENT dfactura (fecha, producto*, base, cuotaiva, total)>
+<!ATTLIST dfactura numped ID #REQUIRED>
+<!ATTLIST dfactura iva NMTOKEN #REQUIRED>
+<!ATTLIST dfactura fpago (efectivo|tarjeta|plazos) #REQUIRED>
+
+<!ELEMENT producto (ref, desc, cant, precio, importe)>
+<!ELEMENT ref (#PCDATA)>
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT cant (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT dir (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ATTLIST poblacion codpostal CDATA "">
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+<!ELEMENT direnv (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT base (#PCDATA)>
+<!ELEMENT cuotaiva (#PCDATA)>
+<!ELEMENT total (#PCDATA)>
+
+
+

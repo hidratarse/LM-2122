@@ -1,0 +1,7 @@
+titulo, autor, fechaPublicacion {
+  display: list-item;
+  list-style: disc inside;
+}
+
+
+

@@ -1,0 +1,22 @@
+
+body, th, td{
+    font-family: Verdana;
+    font-size: x-small;
+    
+}
+body{
+    margin-left: 0,25;
+    margin-right: 0,25;
+}
+h2{
+    font-size: 14pt;
+    color: red;
+    text-align: center;
+}
+b, td{
+    color: olive;
+}
+th{
+    color: white;
+    background-color: #0080C0;
+}

@@ -1,0 +1,67 @@
+
+body{font-family: Comic Sans MS, cursive, sans-serif;}
+
+#contenedor-formulario {
+    width: 400px;
+	border-style:solid;
+	margin:auto;
+	border-width: 1px;
+	border-width: 1;
+	border-radius:10px;
+}
+
+#sorteo {
+	width: 1100px;
+	margin:auto;
+	
+}
+
+form {
+
+}
+
+.titulo-formulario{
+	font-size: 30px;
+	margin-left: 20;
+	padding: 15;
+	
+}
+
+.entrada-datos  {
+	padding:20;
+	border-style:solid;
+	border-width: 0.5;
+	border-color: grey;
+	border-radius:10px;
+	margin: 20;
+	margin-top: 5;
+	
+}
+.entrada-datos #rgpd span{
+	font-size: 13;
+	color: grey;
+}
+h2{
+	margin-left:250px;
+}
+
+/*Botón enviar*/
+.boton {    
+	width: 300px;
+    background-color: #333333;
+	color:white;
+	font-size: 30px;
+	margin-left: 50px;
+	border-width: 1px;
+	border-width: 1;
+	border-radius:40px;
+	}
+
+.boton span{
+	display:block;
+	padding: 10px;
+	
+}
+.boton:hover{
+	background-color: #f81d44;
+}

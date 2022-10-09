@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bandeja[
+  <!ELEMENT bandeja (remitente, destinatario, asunto, cuerpo)>
+  <!ELEMENT remitente (nombre, email)>
+  <!ELEMENT destinatario (nombre, email)>
+  <!ELEMENT asunto (#PCDATA)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT cuerpo (#PCDATA)>
+  ]>
+  <bandeja>
+  <remitente>
+    <nombre></nombre>
+    <email></email>
+  </remitente>
+  <destinatario>
+    <nombre></nombre>
+    <email></email>
+  </destinatario>
+  <asunto></asunto>
+  <cuerpo></cuerpo>
+  </bandeja>

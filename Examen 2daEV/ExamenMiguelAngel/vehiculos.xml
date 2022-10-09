@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vehiculos.xsd">
+  <coche matricula="A1">
+    <marca>Toyota</marca>
+    <modelo>Supra</modelo>
+    <color>Negro</color>
+    <combustible>Diesel</combustible>
+    <precio>2,22€</precio>
+    <kilometraje>2</kilometraje>
+    <desperfectos>5</desperfectos>
+  </coche>
+</vehiculos>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="receta">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="dificultad">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="facil"/>
+              <xsd:enumeration value="media"/>
+              <xsd:enumeration value="dificil"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="tipo">
+          <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="primerplato"/>
+                <xsd:enumeration value="segundoplato"/>
+                <xsd:enumeration value="postre"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="calorias" type="xsd:integer"/>
+        <xsd:element name="tiempo">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="horas">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:integer">
+                    <xsd:pattern value="[0-9]"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              <xsd:element name="minutos">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:integer">
+                    <xsd:pattern value="[0-9]"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="ingredientes">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="ingrediente" minOccurs="3" maxOccurs="unbounded">
+                <xsd:complexType mixed="true">
+                  <xsd:attribute name="cantidad"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="elaboracion">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="paso" minOccurs="3" maxOccurs="unbounded">
+                <xsd:complexType mixed="true">
+                  <xsd:attribute name="numero">
+                    <xsd:simpleType>
+                      <xsd:restriction base="xsd:integer">
+                        <xsd:enumeration value="1"/>
+                        <xsd:enumeration value="2"/>
+                        <xsd:enumeration value="3"/>
+                        <xsd:enumeration value="4"/>
+                        <xsd:enumeration value="5"/>
+                        <xsd:enumeration value="6"/>
+                        <xsd:enumeration value="7"/>
+                        <xsd:enumeration value="8"/>
+                        <xsd:enumeration value="9"/>
+                        <xsd:enumeration value="10"/>
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                 </xsd:attribute>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="electrodomestico" type="xsd:integer"/>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="nombre"/>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>  

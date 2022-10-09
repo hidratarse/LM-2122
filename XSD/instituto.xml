@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<instituto nombre='IESJuandelaCierva' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="instituto.xsd">
+    <familias_profesionales tipo='4'>
+        <profesor documento="DOC111">
+            <nombre>Agustin Aguilera</nombre>
+            <correo>aaguilera@educa.madrid.org</correo>
+            <asignaturas_imparte clase="DAM1V">Sistemas Informáticos</asignaturas_imparte>
+        </profesor>
+        <profesor documento="DOC222">
+            <nombre>Julio Hornos</nombre>
+            <correo>jhornos@educa.madrid.org</correo>
+            <asignaturas_imparte clase="DAM1V">Lenguaje de Marcas</asignaturas_imparte>
+        </profesor>
+        <grado nombre="Desarrollo de aplicaciones multiplataforma">
+            <clase id_clase="DAM1V" tutor="DOC111">
+                   <alumno documento="DOC333">
+                      <nombre>Julio Hornos</nombre>
+                      <correo>jhornos@educa.madrid.org</correo>
+                      <fecha_nac dia="23" mes="02" anyo="1973" />                    
+                      <asignaturas>Lenguaje de Marcas</asignaturas>
+                  </alumno>
+            </clase>
+        </grado>
+    </familias_profesionales>
+</instituto>

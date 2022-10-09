@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="videoclub">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="datos_cliente">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre"/>
+              <xs:element name="apellido" minOccurs="1" maxOccurs="2"/>
+              <xs:element name="DNI">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][A-Z]"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tlf">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="datos_factura" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="resguardo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="forma_pago">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Tarjeta"/>
+                          <xs:enumeration value="Efectivo"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="importe_total"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="compra" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="DVD" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                        <xs:element name="titulo"/>
+                        <xs:element name="fecha"/>
+                        </xs:sequence>
+                        <xs:attribute name="extras">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="si"/>
+                                <xs:enumeration value="no"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="CINTA" minOccurs="0" maxOccurs="unbounded">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="titulo" minOccurs="1" maxOccurs="1"/>
+                            <xs:element name="formato" minOccurs="1" maxOccurs="1"/>
+                          </xs:sequence>
+                          <xs:attribute name="rewind">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:enumeration value="si"/>
+                                <xs:enumeration value="no"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:attribute>
+                        </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="alquiler" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="pelicula" minOccurs="1" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="nombre"/>
+                          <xs:element name="genero"/>
+                          <xs:element name="actores">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="nombre_actor" minOccurs="3" maxOccurs="3"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="idPelicula" type="xs:ID" use="required"/>
+                        <xs:attribute name="valoracion">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:decimal">
+                                <xs:minInclusive value="0"/>
+                                <xs:maxInclusive value="10"/>
+                                <xs:pattern value="1*[0-9][.][1-9]"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="fecha" type="xs:date"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

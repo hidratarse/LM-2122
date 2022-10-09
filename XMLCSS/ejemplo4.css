@@ -1,0 +1,10 @@
+titulo, autor, fechaPublicacion {
+  display: list-item;
+  margin-left: 1.3em;
+  list-style-type: decimal;
+}
+
+
+
+
+

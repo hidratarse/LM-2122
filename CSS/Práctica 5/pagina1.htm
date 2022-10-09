@@ -1,0 +1,44 @@
+<HTML>
+ 
+<HEAD> 
+<TITLE> Ejemplo de estilos especiales </TITLE> 
+    <style>
+    #prueba{
+    color: green;
+    text-decoration: underline;
+    }
+    .letrasazules{
+        color: blue;
+    }
+    .letrasrojas{
+        color: red;
+    }
+    td  b{
+        color:crimson;
+    }
+    ul b{
+        color: magenta;
+    }
+    </style>
+</HEAD> 
+
+<BODY> 
+En este ejemplo vamos a comprobar que se verifican los estilos definidos en funci�n del contexto: la negrita de una celda cualquiera de una tabla debe ser de color rojo, y la negrita de una lista debe ser de color p�rpura. En cambio <B>una negrita</B> en un p�rrafo no variar�.
+<UL type="disc"> 
+<LI>Un elemento cualquiera</LI> 
+<LI>Un elemento con una palabra en <B>negrita</B></LI> 
+<LI>Otro elemento cualquiera</LI> 
+</UL><P> 
+<CENTER> 
+<TABLE border="1" cellspacing="2" cellpadding="2"> 
+<TR><TH>Cabecera 1</TH><TH>Cabecera 2</TH></TR> 
+<TR><TD>Celda (1,1)</TD><TD>Celda (1,2)</TD></TR> 
+<TR><TD><B>Celda (2,1) en negrita</B></TD><TD>Celda (2,2)</TD></TR> 
+</TABLE> 
+</CENTER> 
+<P>Ahora vamos a probar variar un fragmento de texto como valor del par�metro id, poniendolo <strong id="Prueba">en verde y subrayado.</strong>
+<P>
+<span class="letrasrojas">Finalmente, este p�rrafo ir� con un estilo de letras rojas definido como clase y <strong class="letrasazules">en este trozo hay letras azules</strong> definidas, tambien como clase.</span>></P>
+<P>Como ves con todos estos casos especiales tienes muchas opciones a la hora de utilizar CSS.</P>
+</BODY> 
+</HTML>

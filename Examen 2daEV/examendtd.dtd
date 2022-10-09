@@ -1,0 +1,20 @@
+<!ELEMENT instituto (familias_profesionales)>
+<!ATTLIST instituto id_instituto CDATA #REQUIRED>
+<!ELEMENT familias_profesionales (familia_profesional+)>
+<!ELEMENT familia_profesional (grado+, profesores)>
+
+<!ELEMENT grado (clase+)>
+<!ELEMENT clase (alumno+)>
+<!ELEMENT alumno (nombre, email, fecha_nac)>
+<!ELEMENT fecha_nac EMPTY>
+<!ATTLIST fecha_nac fecha CDATA #REQUIRED>
+<!ATTLIST alumno DNI CDATA #REQUIRED>
+<!ATTLIST clase id_clase ID #REQUIRED>
+<!ATTLIST clase id_tutor IDREF #REQUIRED>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (nombre, email,asignaturas+)>
+<!ATTLIST profesor id_profesor ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT asignaturas (nombre_asignaturas)>
+<!ELEMENT nombre_asignaturas (#PCDATA)>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<receta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nombre="tiramisu" xsi:noNamespaceSchemaLocation="receta.xsd">
+  <dificultad>media</dificultad>
+  <tipo>postre</tipo>
+  <calorias>450</calorias>
+  <tiempo>
+    <horas>7</horas>
+    <minutos>0</minutos>
+  </tiempo>
+  <ingredientes>
+    <ingrediente cantidad="100g">chocolate negro</ingrediente>
+    <ingrediente cantidad="24">bizcochos blandos</ingrediente>
+    <ingrediente cantidad="Medio vaso">azúcar</ingrediente>
+    <ingrediente cantidad="un tazón">café sólo</ingrediente>
+    <ingrediente cantidad="3">huevos</ingrediente>
+    <ingrediente cantidad="chorrito">licor</ingrediente>
+    <ingrediente cantidad="0,3L ">nata líquida</ingrediente>
+    <ingrediente cantidad="250g">queso mascarpone</ingrediente>
+  </ingredientes>
+  <elaboracion electrodomestico="microondas">
+    <paso numero="1">Echar la mitad del azúcar en la nata líquida y montarla hasta que quede muy compacta</paso>
+    <paso numero="2">Separar las claras de las yemas y montarlas a punto de nieve.</paso>
+    <paso numero="3">Mezclar despacio el queso y las yemas de huevo, añadiendo el resto del azúcar.</paso>
+    <paso numero="4">Cuando el queso y las yemas estén mezclados, juntar con la nata montada y las claras a punto de nieve y mezclar todo bien, pero despacio</paso>
+    <paso numero="5">En el café caliente disolver un tercio del chocolate y echar un chorrito de licor.</paso>
+    <paso numero="6">Mojar muy ligeramente los bizcochos en el café sin dejar que se empapen y disponer la mitad de ellos cubriendo el fondo de una fuente.</paso>
+    <paso numero="7">Echar la mitad de la mezcla sobre los bizcochos cubriéndolos uniformemente.</paso>
+    <paso numero="8">Poner una nueva capa de bizcochos mojados sobre la mezcla.</paso>
+    <paso numero="9">Echar el resto de la mezcla sobre la segunda capa de bizcochos.</paso>
+    <paso numero="10">Dejar reposar al menos 6 horas antes de servir</paso>
+  </elaboracion>
+</receta>

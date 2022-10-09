@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE correo[
+  <!ELEMENT correo (remitente, destinatario, asunto, cuerpo)>
+  <!ELEMENT remitente (#PCDATA)>
+  <!ELEMENT destinatario (#PCDATA)>
+  <!ELEMENT asunto (#PCDATA)>
+  <!ELEMENT cuerpo (#PCDATA)>
+]>
+<correo>  
+  <remitente></remitente>
+  <destinatario></destinatario>
+  <asunto></asunto>
+  <cuerpo></cuerpo>
+</correo>

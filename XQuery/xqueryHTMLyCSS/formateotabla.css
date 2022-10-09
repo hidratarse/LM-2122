@@ -1,0 +1,20 @@
+body, th, td{
+    font-family: Verdana;
+    font-size: x-small;    
+}
+body{
+    margin-left: 0,25;
+    margin-right: 0,25;
+}
+h2{
+    font-size: 20pt;
+    color: red;
+    text-align: center;
+}
+b, td{
+    color: black;
+}
+th{
+    color: white;
+    background-color: #0080C0;
+}

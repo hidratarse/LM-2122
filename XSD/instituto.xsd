@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="instituto">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="familias_profesionales">
+          <xsd:complexType>
+            <xsd:sequence>
+            <xsd:element name="profesor" type="tipo_profesor" minOccurs="1" maxOccurs="unbounded"/>
+            <xsd:element name="grado" minOccurs="1" maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="clase" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType>
+                      <xsd:sequence>
+                        <xsd:element name="alumno" type="tipo_alumno" minOccurs="1" maxOccurs="unbounded"/>
+                      </xsd:sequence>
+                      <xsd:attribute name="id_clase" type="xsd:ID"/>
+                      <xsd:attribute name="tutor" type="xsd:IDREF" use="required"/>
+                    </xsd:complexType>
+                  </xsd:element>
+                </xsd:sequence>
+                <xsd:attribute name="nombre" type="xsd:string"/>
+              </xsd:complexType>
+            </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="tipo">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:enumeration value="1"/>
+                  <xsd:enumeration value="2"/>
+                  <xsd:enumeration value="3"/>
+                  <xsd:enumeration value="4"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:attribute>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="nombre" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="tipo_profesor">
+    <xsd:sequence>
+      <xsd:element name="nombre"/>
+      <xsd:element name="correo"/>
+      <xsd:element name="asignaturas_imparte">
+        <xsd:complexType mixed="true">
+          <xsd:attribute name="clase" type="xsd:IDREF" use="required"/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute name="documento" type="xsd:ID"/>
+  </xsd:complexType>
+  <xsd:complexType name="tipo_alumno">
+    <xsd:sequence>
+      <xsd:element name="nombre"/>
+      <xsd:element name="correo"/>
+      <xsd:element name="fecha_nac">
+        <xsd:complexType>
+          <xsd:attribute name="dia" type="xsd:string"/>
+          <xsd:attribute name="mes" type="xsd:string"/>
+          <xsd:attribute name="anyo" type="xsd:string"/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="asignaturas" minOccurs="1" maxOccurs="unbounded"/>
+    </xsd:sequence>
+    <xsd:attribute name="documento" type="xsd:ID" use="required"/>
+  </xsd:complexType>
+</xsd:schema>

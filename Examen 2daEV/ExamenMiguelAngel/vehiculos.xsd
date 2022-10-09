@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="vehiculos">
+		<xsd:complexType>
+			<xsd:choice maxOccurs="unbounded">
+				<xsd:element name="coche" type="tipovehiculo"/>
+				<xsd:element name="moto" type="tipovehiculo"/>
+			</xsd:choice>			
+		</xsd:complexType>
+	</xsd:element>	
+	<xsd:complexType name="tipovehiculo">
+		<xsd:sequence>
+			<xsd:element name="marca" type="xsd:string" />
+			<xsd:element name="modelo" type="xsd:string" />
+			<xsd:element name="color" type="xsd:string" />
+			<xsd:element name="combustible">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">													 
+						<xsd:enumeration value="Gasolina"/>
+						<xsd:enumeration value="Diesel"/>
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>	
+			<xsd:element name="precio" type="precio" />
+			<xsd:element name="kilometraje" type="xsd:unsignedInt" />
+			<xsd:element name="desperfectos" minOccurs="0"
+				maxOccurs="unbounded" type="xsd:string" />
+		</xsd:sequence>
+		<xsd:attribute name="matricula" type="xsd:ID" use="required" />
+	</xsd:complexType>	
+	<xsd:simpleType name="precio">
+		<xsd:restriction base="xsd:string">													 
+			<xsd:pattern value="[0-9]*(,)[0-9][0-9](€)"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>  

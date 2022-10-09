@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="geografia">
+	  <xsd:complexType>
+	    <xsd:sequence>
+	      <xsd:element name="continentes">
+          <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="continente" minOccurs="1" maxOccurs="unbounded">
+              <xsd:complexType> 
+                <xsd:sequence>
+                  <xsd:element name="pais" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType mixed="true">
+                      <xsd:sequence>
+                        <xsd:element name="sistema"/>
+                        <xsd:element name="superficie"/>
+                        <xsd:element name="poblacion"/>
+                        <xsd:element name="idioma">
+                          <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                              <xsd:enumeration value="espanyol"/>
+                              <xsd:enumeration value="frances"/>
+                              <xsd:enumeration value="ingles"/>
+                            </xsd:restriction>
+                          </xsd:simpleType>
+                        </xsd:element>
+                      </xsd:sequence>
+                      <xsd:attribute name="nombre"/>
+                    </xsd:complexType>
+                  </xsd:element>
+                </xsd:sequence>
+                <xsd:attribute name="nombre"/>
+              </xsd:complexType>
+	          </xsd:element>
+	        </xsd:sequence>
+	        </xsd:complexType>
+	      </xsd:element>
+	    </xsd:sequence>
+    </xsd:complexType>
+	</xsd:element>
+</xsd:schema>  
+

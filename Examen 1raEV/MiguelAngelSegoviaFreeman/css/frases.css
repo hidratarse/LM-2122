@@ -1,0 +1,48 @@
+/*Estilos generales*/
+body{
+	font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 12px 0;
+}
+/*Caja que contiene los personajes*/
+.personaje {
+	width: 1100px;
+	text-align:justify;
+	margin: auto;
+}
+
+.personaje_i {
+	width: 900px;
+	border-width: 1;
+	border-radius:10px;
+	box-shadow:5px 5px 8px 1px #aaa;
+	margin-left:5%;
+	padding: 15px;	
+}
+.personaje_i img{
+	margin: 10px;
+	float: left;
+}
+
+.personaje_d {
+	border-radius:10px;
+	width: 900px;
+	border-width: 1;
+	box-shadow:-8px -6px 8px 1px#aaa;
+	margin-left:18%;
+	margin-top: 2%;
+	padding: 15px;
+}
+
+.personaje_d img{float:right;}
+
+.pie {
+	width:475px;
+	margin-left: 60%;
+	border-radius:20px;
+	border-bottom:2px solid red;
+	border-right:2px dashed red;
+}

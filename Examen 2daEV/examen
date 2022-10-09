@@ -1,0 +1,29 @@
+﻿<?xlm version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instituto SYSTEM "examendtd.dtd">
+<instituto id_instituto="JUAN DE LA CIERVA">
+  <familias_profesionales>
+    <familia_profesional>
+    <grado>
+        <clase id_clase="a2" id_tutor="a1">
+          <alumno DNI="62623879">
+            <nombre></nombre>
+            <email></email>
+            <fecha_nac fecha="25/25/1997"></fecha_nac>
+          </alumno>
+        </clase>
+    </grado>
+    <profesores>
+      <profesor id_profesor="a1">
+      <nombre>Agustín Aguilera</nombre>
+      <email></email>
+      <asignaturas>
+        <nombre_asignaturas>Lenguaje de Marcas</nombre_asignaturas>
+    </asignaturas>
+    </profesor>
+    </profesores>
+    </familia_profesional>
+  </familias_profesionales>
+</instituto>
+
+
+ 

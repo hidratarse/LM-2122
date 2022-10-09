@@ -1,0 +1,48 @@
+body{
+    background-image: url(img/fondo.jpg);
+    color: #1e1e20;
+    font-family: cursive;
+}
+.contenedor{
+    display: grid;
+    width: 900px;
+    background-color: #e9e3e5;
+    margin-top: 10px;
+    margin-left: 150px;
+    border: 8px solid white;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 30px 30px 50px palevioletred;
+}
+.contenido{
+    background-color: #de5c82;
+    margin: 25px;
+}
+.derecha{
+    float: right;
+    background-color: #fadfe7;
+    border-color: brown;
+    margin: 25px;
+    width: 550;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    column-count: 2;
+}
+.izquierda{
+    float: left;
+    
+}
+.proposito{
+    font-style: italic;
+    font-weight:bold;
+}
+#anyo{
+    font-size:120px;
+    margin-left: 500px;
+    text-shadow: 5px 5px 5px #aaa;
+    color: rgba(0,0,0,0.3);
+    transition: font-size 2s;
+}
+#anyo:hover{
+    font-size:240px;
+}

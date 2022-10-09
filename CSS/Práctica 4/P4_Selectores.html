@@ -1,0 +1,46 @@
+<html>
+<head>
+	 <title>Caso pr&aacute;ctico 4</title>
+	 <style>
+		 h2{text-decoration: underline;}
+		 .clase2{color: #006600;}
+		 .clase2 span{text-decoration: underline;}
+		 .clase1{color: #FF6600;}
+		 .clase1 span{
+			 text-decoration: underline;
+			 font-weight: bold;
+			 color: #FF0044;
+			}
+		p#despedida{
+			text-align: right;
+			color: red;
+			background-color: #99CCFF;
+		}
+
+
+
+
+
+
+	 </style>
+</head>
+<body>
+<h1>Criterios de selecci�n</h1>
+	<p>Existen cinco tipos de selectores o criterios de selecci�n para elegir los elementos que una regla de estilo debe formatear. Mediante su uso, se seleccionan los elementos que se ver�n afectados por las especificaciones que posteriormente se definan sobre su formato. De su buen uso depende la efectividad de la hoja de estilo, ya que una mala elecci�n de selectores provocar�a la aparici�n de resultados inesperados.</p>
+
+<h2>Por tipo o nombre de elemento</h2>
+	<p>Este criterio de selecci�n es el m�s sencillo por su sintaxis. Aplica un determinado formato a todos los elementos mencionados sin distinci�n de clases, identificadores, contextos, etc�tera. Esta sencillez tiene como contrapartida, dependiendo de los casos, la universalidad de su aplicaci�n, es decir, el  formato se aplicar� a todos los elementos. Dado que en la mayor�a de los casos no se desea que todos los elementos de un tipo tengan el mismo formato, suelen aplicarse m�s los otros criterios que, sin poseer la misma sencillez de sintaxis, afinan m�s la selecci�n.</p>
+
+<h2 class="clase2">Por el <span>contexto</span> en el que se encuentra el elemento</h2>
+	<p class="clase1">Con este criterio, se pueden seleccionar elementos en funci�n de sus ascendientes, padres o hermanos. Estos elementos se pueden definir como:</p>
+	<ol class="clase1">
+		<li><span>Ascendiente.</span> Es el elemento que contiene al que se desea formatear. Esta contenci�n es directa, es decir, que puede haber m�s de un contenedor por medio. </li>
+		<li><span>Padre.</span> Es el elemento que contiene directamente al que se desea formatear (hijo). </li>
+		<li><span>Hermano.</span> Es el elemento que precede directamente (hermano adyacente) al deseado dentro del mismo elemento padre.</li>
+	</ol>
+
+<h2>Por clase o identificador del elemento</h2>
+<p>Esta forma de selecci�n es la m�s utilizada de las vistas hasta ahora. Si se etiquetan elementos con una <span>clase</span> o <span>id</span> (t�rmino usado generalmente para referirse a los identificadores), se puede utilizar este criterio en un selector para aplicar formato solamente a dichos elementos. Esto ofrece una gran precisi�n a la hora de seleccionar elementos.</p>
+<p class="clase2" id="despedida">Con esto hemos visto tres de los cinco criterios de selecci�n.</p>
+</body>
+</html>

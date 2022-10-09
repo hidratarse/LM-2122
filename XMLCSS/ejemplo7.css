@@ -1,0 +1,20 @@
+titulo, autor, fechaPublicacion {
+  display: table-row ;
+}
+
+libro{
+  display: block;
+  border: 2px black solid;
+  background-color: lightgreen;
+  border-spacing: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+
+
+
+
+
+

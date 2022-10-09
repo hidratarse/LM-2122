@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<videoclub xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "videoclub2.xsd">
+  <datos_cliente>
+    <nombre>Zeke</nombre>
+    <apellido>Jägger</apellido>
+    <DNI>06033854B</DNI>
+    <tlf>626089187</tlf>
+  </datos_cliente>
+  <datos_factura>
+    <resguardo>
+    <forma_pago>Tarjeta</forma_pago>
+      <importe_total>1000</importe_total>
+    </resguardo>
+    <compra>
+      <DVD extras="no">
+        <titulo>American Psycho</titulo>
+        <fecha>25/03/2005</fecha>
+      </DVD>
+      <CINTA rewind="si">
+        <titulo>El Rey León</titulo>
+        <formato>VHS</formato>
+      </CINTA>
+    </compra>
+    <alquiler fecha="2002-09-24">
+      <pelicula idPelicula="A001" valoracion="9.5">
+        <nombre>The Batman</nombre>
+        <genero>Superheroes</genero>
+        <actores>
+          <nombre_actor>Robert Pattinson</nombre_actor>
+          <nombre_actor>Paul Dano</nombre_actor>
+          <nombre_actor>Zoe Kravitz</nombre_actor>
+        </actores>
+      </pelicula>
+    </alquiler>
+  </datos_factura>
+</videoclub>

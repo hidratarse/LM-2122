@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda[
+  <!ELEMENT agenda (contacto+)>
+  <!ELEMENT contacto (nombre?, email+, telefono+)>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT telefono (#PCDATA)>
+]>
+<agenda>
+  <contacto>
+  <nombre></nombre>
+  <email></email>
+  <telefono></telefono>
+  </contacto>
+</agenda>
